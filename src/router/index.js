@@ -1,12 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-import EnterPage from "../views/EnterPage.vue";
-import SignInPage from "../views/SignInPage.vue";
-import SignUpPage from "../views/SignUpPage.vue";
-import MainPage from "../views/MainPage.vue";
+import EnterPage from "../pages/EnterPage.vue";
+import SignInPage from "../pages/SignInPage.vue";
+import SignUpPage from "../pages/SignUpPage.vue";
+import MainPage from "../pages/MainPage.vue";
 
-import NotFound from "../views/404.vue";
+import NotFound from "../pages/404.vue";
 
 Vue.use(VueRouter);
 
@@ -22,12 +22,12 @@ const routes = [
     component: EnterPage,
   },
   {
-    path: "/signIn",
+    path: "/sign-in",
     name: "sign-in",
     component: SignInPage,
   },
   {
-    path: "/signUp",
+    path: "/sign-up",
     name: "sign-up",
     component: SignUpPage,
   },
